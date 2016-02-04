@@ -1,5 +1,6 @@
 package com.example.josceyn.loginregister;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Login extends AppCompatActivity implements View.OnClickListener {
+public class Login extends Activity implements View.OnClickListener {
 
     Button bLogin;
     EditText etUsername, etPassword;
@@ -22,6 +23,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch(v.getId()){
+
             case R.id.bLogin:
                 String username=etUsername.getText().toString();
                 String password=etPassword.getText().toString();

@@ -1,5 +1,6 @@
 package com.example.josceyn.loginregister;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,7 +13,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
 
-public class Register extends AppCompatActivity implements View.OnClickListener {
+public class Register extends Activity implements View.OnClickListener {
 
 
     Button bRegister;
