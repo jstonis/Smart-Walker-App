@@ -1,0 +1,15 @@
+com.hoho.android.usbserial.examples.BuildConfig
+com.hoho.android.usbserial.examples.DeviceListActivity:
+    private static final int MESSAGE_REFRESH
+    private static final long REFRESH_TIMEOUT_MILLIS
+com.hoho.android.usbserial.examples.R:
+    10:34:public R()
+com.hoho.android.usbserial.examples.R$attr
+com.hoho.android.usbserial.examples.R$drawable
+com.hoho.android.usbserial.examples.R$id:
+    16:16:public R$id()
+com.hoho.android.usbserial.examples.R$layout:
+    25:25:public R$layout()
+com.hoho.android.usbserial.examples.R$string:
+    29:29:public R$string()
+com.hoho.android.usbserial.examples.R$xml

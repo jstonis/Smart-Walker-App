@@ -1,0 +1,18 @@
+com.hoho.android.usbserial.examples.DeviceListActivity
+com.hoho.android.usbserial.examples.DeviceListActivity: DeviceListActivity()
+com.hoho.android.usbserial.examples.R$drawable: int ic_launcher
+com.hoho.android.usbserial.examples.R$id: int consoleText
+com.hoho.android.usbserial.examples.R$id: int demoScroller
+com.hoho.android.usbserial.examples.R$id: int demoTitle
+com.hoho.android.usbserial.examples.R$id: int deviceList
+com.hoho.android.usbserial.examples.R$id: int progressBar
+com.hoho.android.usbserial.examples.R$id: int progressBarTitle
+com.hoho.android.usbserial.examples.R$id: int separator
+com.hoho.android.usbserial.examples.R$layout: int main
+com.hoho.android.usbserial.examples.R$layout: int serial_console
+com.hoho.android.usbserial.examples.R$string: int app_name
+com.hoho.android.usbserial.examples.R$string: int app_title
+com.hoho.android.usbserial.examples.R$string: int refreshing
+com.hoho.android.usbserial.examples.R$xml: int device_filter
+com.hoho.android.usbserial.examples.SerialConsoleActivity
+com.hoho.android.usbserial.examples.SerialConsoleActivity: SerialConsoleActivity()

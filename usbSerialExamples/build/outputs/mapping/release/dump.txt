@@ -1,0 +1,2765 @@
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/DeviceListActivity
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x21
+    = public class com.hoho.android.usbserial.examples.DeviceListActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 172):
+  + Integer [17367047]
+  + String [usb]
+  + Class [android/app/Activity]
+  + Class [android/hardware/usb/UsbManager]
+  + Class [android/os/Handler]
+  + Class [android/widget/ListView]
+  + Class [android/widget/ProgressBar]
+  + Class [android/widget/TextView]
+  + Class [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Class [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+  + Class [com/hoho/android/usbserial/examples/a]
+  + Class [com/hoho/android/usbserial/examples/b]
+  + Class [com/hoho/android/usbserial/examples/c]
+  + Class [com/hoho/android/usbserial/examples/d]
+  + Class [com/hoho/android/usbserial/examples/f]
+  + Class [com/hoho/android/usbserial/examples/g]
+  + Class [com/hoho/android/usbserial/examples/h]
+  + Class [java/lang/Class]
+  + Class [java/lang/Void]
+  + Class [java/util/ArrayList]
+  + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.a Ljava/lang/String;]
+  + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.b Landroid/hardware/usb/UsbManager;]
+  + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.c Landroid/widget/ListView;]
+  + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.d Landroid/widget/TextView;]
+  + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.e Landroid/widget/ProgressBar;]
+  + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.f Landroid/os/Handler;]
+  + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.g Ljava/util/List;]
+  + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.h Landroid/widget/ArrayAdapter;]
+  + Fieldref [com/hoho/android/usbserial/examples/f.deviceList I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.progressBar I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.progressBarTitle I]
+  + Fieldref [com/hoho/android/usbserial/examples/g.main I]
+  + Fieldref [com/hoho/android/usbserial/examples/h.refreshing I]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onPause ()V]
+  + Methodref [android/app/Activity.onResume ()V]
+  + Methodref [android/os/Handler.removeMessages (I)V]
+  + Methodref [android/os/Handler.sendEmptyMessage (I)Z]
+  + Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
+  + Methodref [android/widget/ListView.setOnItemClickListener (Landroid/widget/AdapterView$OnItemClickListener;)V]
+  + Methodref [android/widget/ProgressBar.setVisibility (I)V]
+  + Methodref [android/widget/TextView.setText (I)V]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.a ()V]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.a (Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.b ()V]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c ()V]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.setContentView (I)V]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a (Landroid/content/Context;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + Methodref [com/hoho/android/usbserial/examples/a.<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Methodref [com/hoho/android/usbserial/examples/b.<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;Landroid/content/Context;ILjava/util/List;)V]
+  + Methodref [com/hoho/android/usbserial/examples/c.<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Methodref [com/hoho/android/usbserial/examples/d.<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Methodref [com/hoho/android/usbserial/examples/d.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [java/lang/Class.getSimpleName ()Ljava/lang/String;]
+  + Methodref [java/util/ArrayList.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + NameAndType [<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;Landroid/content/Context;ILjava/util/List;)V]
+  + NameAndType [a ()V]
+  + NameAndType [a (Landroid/content/Context;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + NameAndType [a (Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + NameAndType [a Ljava/lang/String;]
+  + NameAndType [b ()V]
+  + NameAndType [b Landroid/hardware/usb/UsbManager;]
+  + NameAndType [c ()V]
+  + NameAndType [c Landroid/widget/ListView;]
+  + NameAndType [d Landroid/widget/TextView;]
+  + NameAndType [deviceList I]
+  + NameAndType [e Landroid/widget/ProgressBar;]
+  + NameAndType [execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + NameAndType [f Landroid/os/Handler;]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [g Ljava/util/List;]
+  + NameAndType [getSimpleName ()Ljava/lang/String;]
+  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [h Landroid/widget/ArrayAdapter;]
+  + NameAndType [main I]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onPause ()V]
+  + NameAndType [onResume ()V]
+  + NameAndType [progressBar I]
+  + NameAndType [progressBarTitle I]
+  + NameAndType [refreshing I]
+  + NameAndType [removeMessages (I)V]
+  + NameAndType [sendEmptyMessage (I)Z]
+  + NameAndType [setAdapter (Landroid/widget/ListAdapter;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setOnItemClickListener (Landroid/widget/AdapterView$OnItemClickListener;)V]
+  + NameAndType [setText (I)V]
+  + NameAndType [setVisibility (I)V]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(I)Z]
+  + Utf8 [(Landroid/content/Context;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/widget/AdapterView$OnItemClickListener;)V]
+  + Utf8 [(Landroid/widget/ListAdapter;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/hardware/usb/UsbManager;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/os/Handler;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/ArrayAdapter;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/TextView;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;Landroid/content/Context;ILjava/util/List;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Landroid/hardware/usb/UsbManager;]
+  + Utf8 [Landroid/os/Handler;]
+  + Utf8 [Landroid/widget/ArrayAdapter;]
+  + Utf8 [Landroid/widget/ListView;]
+  + Utf8 [Landroid/widget/ProgressBar;]
+  + Utf8 [Landroid/widget/TextView;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [Ljava/util/List;]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/hardware/usb/UsbManager]
+  + Utf8 [android/os/Handler]
+  + Utf8 [android/widget/ListView]
+  + Utf8 [android/widget/ProgressBar]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/a]
+  + Utf8 [com/hoho/android/usbserial/examples/b]
+  + Utf8 [com/hoho/android/usbserial/examples/c]
+  + Utf8 [com/hoho/android/usbserial/examples/d]
+  + Utf8 [com/hoho/android/usbserial/examples/f]
+  + Utf8 [com/hoho/android/usbserial/examples/g]
+  + Utf8 [com/hoho/android/usbserial/examples/h]
+  + Utf8 [d]
+  + Utf8 [deviceList]
+  + Utf8 [e]
+  + Utf8 [execute]
+  + Utf8 [f]
+  + Utf8 [findViewById]
+  + Utf8 [g]
+  + Utf8 [getSimpleName]
+  + Utf8 [getSystemService]
+  + Utf8 [h]
+  + Utf8 [java/lang/Class]
+  + Utf8 [java/lang/Void]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [main]
+  + Utf8 [onCreate]
+  + Utf8 [onPause]
+  + Utf8 [onResume]
+  + Utf8 [progressBar]
+  + Utf8 [progressBarTitle]
+  + Utf8 [refreshing]
+  + Utf8 [removeMessages]
+  + Utf8 [sendEmptyMessage]
+  + Utf8 [setAdapter]
+  + Utf8 [setContentView]
+  + Utf8 [setOnItemClickListener]
+  + Utf8 [setText]
+  + Utf8 [setVisibility]
+  + Utf8 [usb]
+
+Fields (count = 8):
+  + Field:        a Ljava/lang/String;
+    Access flags: 0x12
+      = private final java.lang.String a
+  + Field:        b Landroid/hardware/usb/UsbManager;
+    Access flags: 0x2
+      = private android.hardware.usb.UsbManager b
+  + Field:        c Landroid/widget/ListView;
+    Access flags: 0x2
+      = private android.widget.ListView c
+  + Field:        d Landroid/widget/TextView;
+    Access flags: 0x2
+      = private android.widget.TextView d
+  + Field:        e Landroid/widget/ProgressBar;
+    Access flags: 0x2
+      = private android.widget.ProgressBar e
+  + Field:        f Landroid/os/Handler;
+    Access flags: 0x12
+      = private final android.os.Handler f
+  + Field:        g Ljava/util/List;
+    Access flags: 0x2
+      = private java.util.List g
+  + Field:        h Landroid/widget/ArrayAdapter;
+    Access flags: 0x2
+      = private android.widget.ArrayAdapter h
+
+Methods (count = 17):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public DeviceListActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 37, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #34
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] ldc #9
+        + Class [com/hoho/android/usbserial/examples/DeviceListActivity]
+      [7] invokevirtual #57
+        + Methodref [java/lang/Class.getSimpleName ()Ljava/lang/String;]
+      [10] putfield #21
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.a Ljava/lang/String;]
+      [13] aload_0 v0
+      [14] new #11
+        + Class [com/hoho/android/usbserial/examples/a]
+      [17] dup
+      [18] aload_0 v0
+      [19] invokespecial #52
+        + Methodref [com/hoho/android/usbserial/examples/a.<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+      [22] putfield #26
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.f Landroid/os/Handler;]
+      [25] aload_0 v0
+      [26] new #20
+        + Class [java/util/ArrayList]
+      [29] dup
+      [30] invokespecial #58
+        + Methodref [java/util/ArrayList.<init> ()V]
+      [33] putfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.g Ljava/util/List;]
+      [36] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 113, locals = 2, stack = 7):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #35
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] getstatic #32
+        + Fieldref [com/hoho/android/usbserial/examples/g.main I]
+      [9] invokevirtual #50
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.setContentView (I)V]
+      [12] aload_0 v0
+      [13] aload_0 v0
+      [14] ldc #2
+        + String [usb]
+      [16] invokevirtual #49
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [19] checkcast #4
+        + Class [android/hardware/usb/UsbManager]
+      [22] putfield #22
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.b Landroid/hardware/usb/UsbManager;]
+      [25] aload_0 v0
+      [26] aload_0 v0
+      [27] getstatic #29
+        + Fieldref [com/hoho/android/usbserial/examples/f.deviceList I]
+      [30] invokevirtual #48
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.findViewById (I)Landroid/view/View;]
+      [33] checkcast #6
+        + Class [android/widget/ListView]
+      [36] putfield #23
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.c Landroid/widget/ListView;]
+      [39] aload_0 v0
+      [40] aload_0 v0
+      [41] getstatic #30
+        + Fieldref [com/hoho/android/usbserial/examples/f.progressBar I]
+      [44] invokevirtual #48
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.findViewById (I)Landroid/view/View;]
+      [47] checkcast #7
+        + Class [android/widget/ProgressBar]
+      [50] putfield #25
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.e Landroid/widget/ProgressBar;]
+      [53] aload_0 v0
+      [54] aload_0 v0
+      [55] getstatic #31
+        + Fieldref [com/hoho/android/usbserial/examples/f.progressBarTitle I]
+      [58] invokevirtual #48
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.findViewById (I)Landroid/view/View;]
+      [61] checkcast #8
+        + Class [android/widget/TextView]
+      [64] putfield #24
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.d Landroid/widget/TextView;]
+      [67] aload_0 v0
+      [68] new #12
+        + Class [com/hoho/android/usbserial/examples/b]
+      [71] dup
+      [72] aload_0 v0
+      [73] aload_0 v0
+      [74] ldc #1
+        + Integer [17367047]
+      [76] aload_0 v0
+      [77] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.g Ljava/util/List;]
+      [80] invokespecial #53
+        + Methodref [com/hoho/android/usbserial/examples/b.<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;Landroid/content/Context;ILjava/util/List;)V]
+      [83] putfield #28
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.h Landroid/widget/ArrayAdapter;]
+      [86] aload_0 v0
+      [87] getfield #23
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.c Landroid/widget/ListView;]
+      [90] aload_0 v0
+      [91] getfield #28
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.h Landroid/widget/ArrayAdapter;]
+      [94] invokevirtual #40
+        + Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
+      [97] aload_0 v0
+      [98] getfield #23
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.c Landroid/widget/ListView;]
+      [101] new #13
+        + Class [com/hoho/android/usbserial/examples/c]
+      [104] dup
+      [105] aload_0 v0
+      [106] invokespecial #54
+        + Methodref [com/hoho/android/usbserial/examples/c.<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+      [109] invokevirtual #41
+        + Methodref [android/widget/ListView.setOnItemClickListener (Landroid/widget/AdapterView$OnItemClickListener;)V]
+      [112] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onResume()V
+    Access flags: 0x4
+      = protected void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #37
+        + Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] getfield #26
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.f Landroid/os/Handler;]
+      [8] bipush 101
+      [10] invokevirtual #39
+        + Methodref [android/os/Handler.sendEmptyMessage (I)Z]
+      [13] pop
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPause()V
+    Access flags: 0x4
+      = protected void onPause()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 14, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #36
+        + Methodref [android/app/Activity.onPause ()V]
+      [4] aload_0 v0
+      [5] getfield #26
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.f Landroid/os/Handler;]
+      [8] bipush 101
+      [10] invokevirtual #38
+        + Methodref [android/os/Handler.removeMessages (I)V]
+      [13] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x2
+      = private void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 28, locals = 1, stack = 5):
+      [0] aload_0 v0
+      [1] invokespecial #46
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.b ()V]
+      [4] new #14
+        + Class [com/hoho/android/usbserial/examples/d]
+      [7] dup
+      [8] aload_0 v0
+      [9] invokespecial #55
+        + Methodref [com/hoho/android/usbserial/examples/d.<init> (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+      [12] iconst_1
+      [13] anewarray #19
+        + Class [java/lang/Void]
+      [16] dup
+      [17] iconst_0
+      [18] aconst_null
+      [19] checkcast #19
+        + Class [java/lang/Void]
+      [22] aastore
+      [23] invokevirtual #56
+        + Methodref [com/hoho/android/usbserial/examples/d.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [26] pop
+      [27] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()V
+    Access flags: 0x2
+      = private void b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 19, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #25
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.e Landroid/widget/ProgressBar;]
+      [4] iconst_0
+      [5] invokevirtual #42
+        + Methodref [android/widget/ProgressBar.setVisibility (I)V]
+      [8] aload_0 v0
+      [9] getfield #24
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.d Landroid/widget/TextView;]
+      [12] getstatic #33
+        + Fieldref [com/hoho/android/usbserial/examples/h.refreshing I]
+      [15] invokevirtual #43
+        + Methodref [android/widget/TextView.setText (I)V]
+      [18] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()V
+    Access flags: 0x2
+      = private void c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #25
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.e Landroid/widget/ProgressBar;]
+      [4] iconst_4
+      [5] invokevirtual #42
+        + Methodref [android/widget/ProgressBar.setVisibility (I)V]
+      [8] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V
+    Access flags: 0x2
+      = private void a(com.hoho.android.usbserial.driver.UsbSerialPort)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokestatic #51
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a (Landroid/content/Context;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V
+    Access flags: 0x1008
+      = static synthetic void a(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #44
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.a ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/os/Handler;
+    Access flags: 0x1008
+      = static synthetic android.os.Handler b(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #26
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.f Landroid/os/Handler;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;
+    Access flags: 0x1008
+      = static synthetic java.util.List c(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.g Ljava/util/List;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       d(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;
+    Access flags: 0x1008
+      = static synthetic java.lang.String d(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #21
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.a Ljava/lang/String;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/hoho/android/usbserial/examples/DeviceListActivity;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V
+    Access flags: 0x1008
+      = static synthetic void a(com.hoho.android.usbserial.examples.DeviceListActivity,com.hoho.android.usbserial.driver.UsbSerialPort)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #45
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.a (Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       e(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/hardware/usb/UsbManager;
+    Access flags: 0x1008
+      = static synthetic android.hardware.usb.UsbManager e(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #22
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.b Landroid/hardware/usb/UsbManager;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       f(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/ArrayAdapter;
+    Access flags: 0x1008
+      = static synthetic android.widget.ArrayAdapter f(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #28
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.h Landroid/widget/ArrayAdapter;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       g(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/TextView;
+    Access flags: 0x1008
+      = static synthetic android.widget.TextView g(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #24
+        + Fieldref [com/hoho/android/usbserial/examples/DeviceListActivity.d Landroid/widget/TextView;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       h(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V
+    Access flags: 0x1008
+      = static synthetic void h(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #47
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/a
+  Superclass:    android/os/Handler
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x20
+    = class com.hoho.android.usbserial.examples.a extends android.os.Handler
+
+Interfaces (count = 0):
+
+Constant Pool (count = 39):
+  + Class [android/os/Handler]
+  + Class [android/os/Message]
+  + Class [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Class [com/hoho/android/usbserial/examples/a]
+  + Long [5000]
+  + Fieldref [android/os/Message.what I]
+  + Fieldref [com/hoho/android/usbserial/examples/a.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + Methodref [android/os/Handler.<init> ()V]
+  + Methodref [android/os/Handler.handleMessage (Landroid/os/Message;)V]
+  + Methodref [android/os/Handler.sendEmptyMessageDelayed (IJ)Z]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.a (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.b (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/os/Handler;]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + NameAndType [a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + NameAndType [b (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/os/Handler;]
+  + NameAndType [handleMessage (Landroid/os/Message;)V]
+  + NameAndType [sendEmptyMessageDelayed (IJ)Z]
+  + NameAndType [what I]
+  + Utf8 [()V]
+  + Utf8 [(IJ)Z]
+  + Utf8 [(Landroid/os/Message;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/os/Handler;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + Utf8 [a]
+  + Utf8 [android/os/Handler]
+  + Utf8 [android/os/Message]
+  + Utf8 [b]
+  + Utf8 [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/a]
+  + Utf8 [handleMessage]
+  + Utf8 [sendEmptyMessageDelayed]
+  + Utf8 [what]
+
+Fields (count = 1):
+  + Field:        a Lcom/hoho/android/usbserial/examples/DeviceListActivity;
+    Access flags: 0x1010
+      = final synthetic com.hoho.android.usbserial.examples.DeviceListActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V
+    Access flags: 0x0
+      = a(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #8
+        + Fieldref [com/hoho/android/usbserial/examples/a.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #9
+        + Methodref [android/os/Handler.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       handleMessage(Landroid/os/Message;)V
+    Access flags: 0x1
+      = public void handleMessage(android.os.Message)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 56, locals = 2, stack = 4):
+      [0] aload_1 v1
+      [1] getfield #7
+        + Fieldref [android/os/Message.what I]
+      [4] lookupswitch (1 offsets, default=46) (target=50)
+        101: offset = 20, target = 24
+        default: offset = 46, target = 50
+      [24] aload_0 v0
+      [25] getfield #8
+        + Fieldref [com/hoho/android/usbserial/examples/a.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [28] invokestatic #12
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.a (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+      [31] aload_0 v0
+      [32] getfield #8
+        + Fieldref [com/hoho/android/usbserial/examples/a.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [35] invokestatic #13
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.b (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/os/Handler;]
+      [38] bipush 101
+      [40] ldc2_w #5
+        + Long [5000]
+      [43] invokevirtual #11
+        + Methodref [android/os/Handler.sendEmptyMessageDelayed (IJ)Z]
+      [46] pop
+      [47] goto +8 (target=55)
+      [50] aload_0 v0
+      [51] aload_1 v1
+      [52] invokespecial #10
+        + Methodref [android/os/Handler.handleMessage (Landroid/os/Message;)V]
+      [55] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/b
+  Superclass:    android/widget/ArrayAdapter
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x20
+    = class com.hoho.android.usbserial.examples.b extends android.widget.ArrayAdapter
+
+Interfaces (count = 0):
+
+Constant Pool (count = 104):
+  + Integer [17367044]
+  + String [Vendor %s Product %s]
+  + String [layout_inflater]
+  + Class [android/hardware/usb/UsbDevice]
+  + Class [android/view/LayoutInflater]
+  + Class [android/widget/ArrayAdapter]
+  + Class [android/widget/TextView]
+  + Class [android/widget/TwoLineListItem]
+  + Class [com/hoho/android/usbserial/driver/UsbSerialDriver]
+  + Class [com/hoho/android/usbserial/driver/UsbSerialPort]
+  + Class [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Class [com/hoho/android/usbserial/examples/b]
+  + Class [com/hoho/android/usbserial/util/HexDump]
+  + Class [java/lang/Class]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Class [java/util/List]
+  + Fieldref [com/hoho/android/usbserial/examples/b.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + Methodref [android/hardware/usb/UsbDevice.getProductId ()I]
+  + Methodref [android/hardware/usb/UsbDevice.getVendorId ()I]
+  + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
+  + Methodref [android/widget/ArrayAdapter.<init> (Landroid/content/Context;ILjava/util/List;)V]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [android/widget/TwoLineListItem.getText1 ()Landroid/widget/TextView;]
+  + Methodref [android/widget/TwoLineListItem.getText2 ()Landroid/widget/TextView;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [com/hoho/android/usbserial/util/HexDump.toHexString (S)Ljava/lang/String;]
+  + Methodref [java/lang/Class.getSimpleName ()Ljava/lang/String;]
+  + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+  + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialDriver.getDevice ()Landroid/hardware/usb/UsbDevice;]
+  + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.getDriver ()Lcom/hoho/android/usbserial/driver/UsbSerialDriver;]
+  + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+  + NameAndType [<init> (Landroid/content/Context;ILjava/util/List;)V]
+  + NameAndType [a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + NameAndType [c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + NameAndType [format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + NameAndType [get (I)Ljava/lang/Object;]
+  + NameAndType [getClass ()Ljava/lang/Class;]
+  + NameAndType [getDevice ()Landroid/hardware/usb/UsbDevice;]
+  + NameAndType [getDriver ()Lcom/hoho/android/usbserial/driver/UsbSerialDriver;]
+  + NameAndType [getProductId ()I]
+  + NameAndType [getSimpleName ()Ljava/lang/String;]
+  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [getText1 ()Landroid/widget/TextView;]
+  + NameAndType [getText2 ()Landroid/widget/TextView;]
+  + NameAndType [getVendorId ()I]
+  + NameAndType [inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [toHexString (S)Ljava/lang/String;]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/hardware/usb/UsbDevice;]
+  + Utf8 [()Landroid/widget/TextView;]
+  + Utf8 [()Lcom/hoho/android/usbserial/driver/UsbSerialDriver;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;]
+  + Utf8 [(ILandroid/view/ViewGroup;)Landroid/view/View;]
+  + Utf8 [(Landroid/content/Context;ILjava/util/List;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;Landroid/content/Context;ILjava/util/List;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [(S)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + Utf8 [Vendor %s Product %s]
+  + Utf8 [a]
+  + Utf8 [android/hardware/usb/UsbDevice]
+  + Utf8 [android/view/LayoutInflater]
+  + Utf8 [android/widget/ArrayAdapter]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [android/widget/TwoLineListItem]
+  + Utf8 [c]
+  + Utf8 [com/hoho/android/usbserial/driver/UsbSerialDriver]
+  + Utf8 [com/hoho/android/usbserial/driver/UsbSerialPort]
+  + Utf8 [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/b]
+  + Utf8 [com/hoho/android/usbserial/util/HexDump]
+  + Utf8 [format]
+  + Utf8 [get]
+  + Utf8 [getClass]
+  + Utf8 [getDevice]
+  + Utf8 [getDriver]
+  + Utf8 [getProductId]
+  + Utf8 [getSimpleName]
+  + Utf8 [getSystemService]
+  + Utf8 [getText1]
+  + Utf8 [getText2]
+  + Utf8 [getVendorId]
+  + Utf8 [getView]
+  + Utf8 [inflate]
+  + Utf8 [java/lang/Class]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/util/List]
+  + Utf8 [layout_inflater]
+  + Utf8 [setText]
+  + Utf8 [toHexString]
+
+Fields (count = 1):
+  + Field:        a Lcom/hoho/android/usbserial/examples/DeviceListActivity;
+    Access flags: 0x1010
+      = final synthetic com.hoho.android.usbserial.examples.DeviceListActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/hoho/android/usbserial/examples/DeviceListActivity;Landroid/content/Context;ILjava/util/List;)V
+    Access flags: 0x0
+      = b(com.hoho.android.usbserial.examples.DeviceListActivity,android.content.Context,int,java.util.List)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 14, locals = 5, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #18
+        + Fieldref [com/hoho/android/usbserial/examples/b.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] iload_3 v3
+      [8] aload v4
+      [10] invokespecial #22
+        + Methodref [android/widget/ArrayAdapter.<init> (Landroid/content/Context;ILjava/util/List;)V]
+      [13] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    Access flags: 0x1
+      = public android.view.View getView(int,android.view.View,android.view.ViewGroup)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 144, locals = 10, stack = 5):
+      [0] aload_2 v2
+      [1] ifnonnull +33 (target=34)
+      [4] aload_0 v0
+      [5] getfield #18
+        + Fieldref [com/hoho/android/usbserial/examples/b.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [8] ldc #3
+        + String [layout_inflater]
+      [10] invokevirtual #27
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [13] checkcast #5
+        + Class [android/view/LayoutInflater]
+      [16] astore v5
+      [18] aload v5
+      [20] ldc #1
+        + Integer [17367044]
+      [22] aconst_null
+      [23] invokevirtual #21
+        + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
+      [26] checkcast #8
+        + Class [android/widget/TwoLineListItem]
+      [29] astore v4
+      [31] goto +9 (target=40)
+      [34] aload_2 v2
+      [35] checkcast #8
+        + Class [android/widget/TwoLineListItem]
+      [38] astore v4
+      [40] aload_0 v0
+      [41] getfield #18
+        + Fieldref [com/hoho/android/usbserial/examples/b.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [44] invokestatic #26
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+      [47] iload_1 v1
+      [48] invokeinterface #34, 512
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [53] checkcast #10
+        + Class [com/hoho/android/usbserial/driver/UsbSerialPort]
+      [56] astore v5
+      [58] aload v5
+      [60] invokeinterface #33, 256
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.getDriver ()Lcom/hoho/android/usbserial/driver/UsbSerialDriver;]
+      [65] astore v6
+      [67] aload v6
+      [69] invokeinterface #32, 256
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialDriver.getDevice ()Landroid/hardware/usb/UsbDevice;]
+      [74] astore v7
+      [76] ldc #2
+        + String [Vendor %s Product %s]
+      [78] iconst_2
+      [79] anewarray #15
+        + Class [java/lang/Object]
+      [82] dup
+      [83] iconst_0
+      [84] aload v7
+      [86] invokevirtual #20
+        + Methodref [android/hardware/usb/UsbDevice.getVendorId ()I]
+      [89] i2s
+      [90] invokestatic #28
+        + Methodref [com/hoho/android/usbserial/util/HexDump.toHexString (S)Ljava/lang/String;]
+      [93] aastore
+      [94] dup
+      [95] iconst_1
+      [96] aload v7
+      [98] invokevirtual #19
+        + Methodref [android/hardware/usb/UsbDevice.getProductId ()I]
+      [101] i2s
+      [102] invokestatic #28
+        + Methodref [com/hoho/android/usbserial/util/HexDump.toHexString (S)Ljava/lang/String;]
+      [105] aastore
+      [106] invokestatic #31
+        + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+      [109] astore v8
+      [111] aload v4
+      [113] invokevirtual #24
+        + Methodref [android/widget/TwoLineListItem.getText1 ()Landroid/widget/TextView;]
+      [116] aload v8
+      [118] invokevirtual #23
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [121] aload v6
+      [123] invokevirtual #30
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [126] invokevirtual #29
+        + Methodref [java/lang/Class.getSimpleName ()Ljava/lang/String;]
+      [129] astore v9
+      [131] aload v4
+      [133] invokevirtual #25
+        + Methodref [android/widget/TwoLineListItem.getText2 ()Landroid/widget/TextView;]
+      [136] aload v9
+      [138] invokevirtual #23
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [141] aload v4
+      [143] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/c
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x20
+    = class com.hoho.android.usbserial.examples.c extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/widget/AdapterView$OnItemClickListener]
+
+Constant Pool (count = 70):
+  + String [Illegal position.]
+  + String [Pressed item ]
+  + Class [android/util/Log]
+  + Class [android/widget/AdapterView$OnItemClickListener]
+  + Class [com/hoho/android/usbserial/driver/UsbSerialPort]
+  + Class [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Class [com/hoho/android/usbserial/examples/c]
+  + Class [java/lang/Object]
+  + Class [java/lang/StringBuilder]
+  + Class [java/util/List]
+  + Fieldref [com/hoho/android/usbserial/examples/c.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.a (Lcom/hoho/android/usbserial/examples/DeviceListActivity;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/List.size ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lcom/hoho/android/usbserial/examples/DeviceListActivity;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + NameAndType [a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + NameAndType [d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [get (I)Ljava/lang/Object;]
+  + NameAndType [size ()I]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [w (Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [()I]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(Landroid/widget/AdapterView;Landroid/view/View;IJ)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Illegal position.]
+  + Utf8 [Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + Utf8 [Pressed item ]
+  + Utf8 [a]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/widget/AdapterView$OnItemClickListener]
+  + Utf8 [append]
+  + Utf8 [c]
+  + Utf8 [com/hoho/android/usbserial/driver/UsbSerialPort]
+  + Utf8 [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/c]
+  + Utf8 [d]
+  + Utf8 [get]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/util/List]
+  + Utf8 [onItemClick]
+  + Utf8 [size]
+  + Utf8 [toString]
+  + Utf8 [w]
+
+Fields (count = 1):
+  + Field:        a Lcom/hoho/android/usbserial/examples/DeviceListActivity;
+    Access flags: 0x1010
+      = final synthetic com.hoho.android.usbserial.examples.DeviceListActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V
+    Access flags: 0x0
+      = c(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #11
+        + Fieldref [com/hoho/android/usbserial/examples/c.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #17
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    Access flags: 0x1
+      = public void onItemClick(android.widget.AdapterView,android.view.View,int,long)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 88, locals = 7, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #11
+        + Fieldref [com/hoho/android/usbserial/examples/c.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [4] invokestatic #16
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+      [7] new #9
+        + Class [java/lang/StringBuilder]
+      [10] dup
+      [11] invokespecial #18
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [14] ldc #2
+        + String [Pressed item ]
+      [16] invokevirtual #20
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [19] iload_3 v3
+      [20] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [23] invokevirtual #21
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [26] invokestatic #12
+        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [29] pop
+      [30] iload_3 v3
+      [31] aload_0 v0
+      [32] getfield #11
+        + Fieldref [com/hoho/android/usbserial/examples/c.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [35] invokestatic #15
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+      [38] invokeinterface #23, 256
+        + InterfaceMethodref [java/util/List.size ()I]
+      [43] ificmplt +17 (target=60)
+      [46] aload_0 v0
+      [47] getfield #11
+        + Fieldref [com/hoho/android/usbserial/examples/c.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [50] invokestatic #16
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+      [53] ldc #1
+        + String [Illegal position.]
+      [55] invokestatic #13
+        + Methodref [android/util/Log.w (Ljava/lang/String;Ljava/lang/String;)I]
+      [58] pop
+      [59] return
+      [60] aload_0 v0
+      [61] getfield #11
+        + Fieldref [com/hoho/android/usbserial/examples/c.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [64] invokestatic #15
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+      [67] iload_3 v3
+      [68] invokeinterface #22, 512
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [73] checkcast #5
+        + Class [com/hoho/android/usbserial/driver/UsbSerialPort]
+      [76] astore v6
+      [78] aload_0 v0
+      [79] getfield #11
+        + Fieldref [com/hoho/android/usbserial/examples/c.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [82] aload v6
+      [84] invokestatic #14
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.a (Lcom/hoho/android/usbserial/examples/DeviceListActivity;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+      [87] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/d
+  Superclass:    android/os/AsyncTask
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x20
+    = class com.hoho.android.usbserial.examples.d extends android.os.AsyncTask
+
+Interfaces (count = 0):
+
+Constant Pool (count = 164):
+  + String []
+  + String [ entries found.]
+  + String [%s device(s) found]
+  + String [+ %s: %s port%s]
+  + String [Done refreshing, ]
+  + String [Refreshing device list ...]
+  + String [s]
+  + Class [[Ljava/lang/Void;]
+  + Class [android/os/AsyncTask]
+  + Class [android/os/SystemClock]
+  + Class [android/util/Log]
+  + Class [android/widget/ArrayAdapter]
+  + Class [android/widget/TextView]
+  + Class [com/hoho/android/usbserial/driver/UsbSerialDriver]
+  + Class [com/hoho/android/usbserial/driver/UsbSerialProber]
+  + Class [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Class [com/hoho/android/usbserial/examples/d]
+  + Class [java/lang/Integer]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Class [java/lang/StringBuilder]
+  + Class [java/util/ArrayList]
+  + Class [java/util/Iterator]
+  + Class [java/util/List]
+  + Long [1000]
+  + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + Methodref [android/os/AsyncTask.<init> ()V]
+  + Methodref [android/os/SystemClock.sleep (J)V]
+  + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/widget/ArrayAdapter.notifyDataSetChanged ()V]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [com/hoho/android/usbserial/driver/UsbSerialProber.findAllDrivers (Landroid/hardware/usb/UsbManager;)Ljava/util/List;]
+  + Methodref [com/hoho/android/usbserial/driver/UsbSerialProber.getDefaultProber ()Lcom/hoho/android/usbserial/driver/UsbSerialProber;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.e (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/hardware/usb/UsbManager;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.f (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/ArrayAdapter;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.g (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/TextView;]
+  + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.h (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Methodref [com/hoho/android/usbserial/examples/d.a (Ljava/util/List;)V]
+  + Methodref [com/hoho/android/usbserial/examples/d.a ([Ljava/lang/Void;)Ljava/util/List;]
+  + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+  + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + Methodref [java/util/ArrayList.<init> ()V]
+  + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialDriver.getPorts ()Ljava/util/List;]
+  + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/List.addAll (Ljava/util/Collection;)Z]
+  + InterfaceMethodref [java/util/List.clear ()V]
+  + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+  + InterfaceMethodref [java/util/List.size ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Ljava/util/List;)V]
+  + NameAndType [a ([Ljava/lang/Void;)Ljava/util/List;]
+  + NameAndType [a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + NameAndType [addAll (Ljava/util/Collection;)Z]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + NameAndType [clear ()V]
+  + NameAndType [d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [e (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/hardware/usb/UsbManager;]
+  + NameAndType [f (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/ArrayAdapter;]
+  + NameAndType [findAllDrivers (Landroid/hardware/usb/UsbManager;)Ljava/util/List;]
+  + NameAndType [format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + NameAndType [g (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/TextView;]
+  + NameAndType [getDefaultProber ()Lcom/hoho/android/usbserial/driver/UsbSerialProber;]
+  + NameAndType [getPorts ()Ljava/util/List;]
+  + NameAndType [h (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + NameAndType [notifyDataSetChanged ()V]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [size ()I]
+  + NameAndType [sleep (J)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [valueOf (I)Ljava/lang/Integer;]
+  + Utf8 []
+  + Utf8 [ entries found.]
+  + Utf8 [%s device(s) found]
+  + Utf8 [()I]
+  + Utf8 [()Lcom/hoho/android/usbserial/driver/UsbSerialProber;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()Ljava/util/List;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Ljava/lang/Integer;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(J)V]
+  + Utf8 [(Landroid/hardware/usb/UsbManager;)Ljava/util/List;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/hardware/usb/UsbManager;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/ArrayAdapter;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/TextView;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/Object;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [(Ljava/util/Collection;)Z]
+  + Utf8 [(Ljava/util/List;)V]
+  + Utf8 [([Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [([Ljava/lang/Void;)Ljava/util/List;]
+  + Utf8 [+ %s: %s port%s]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Done refreshing, ]
+  + Utf8 [Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+  + Utf8 [Refreshing device list ...]
+  + Utf8 [[Ljava/lang/Void;]
+  + Utf8 [a]
+  + Utf8 [addAll]
+  + Utf8 [android/os/AsyncTask]
+  + Utf8 [android/os/SystemClock]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/widget/ArrayAdapter]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [append]
+  + Utf8 [c]
+  + Utf8 [clear]
+  + Utf8 [com/hoho/android/usbserial/driver/UsbSerialDriver]
+  + Utf8 [com/hoho/android/usbserial/driver/UsbSerialProber]
+  + Utf8 [com/hoho/android/usbserial/examples/DeviceListActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/d]
+  + Utf8 [d]
+  + Utf8 [doInBackground]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [findAllDrivers]
+  + Utf8 [format]
+  + Utf8 [g]
+  + Utf8 [getDefaultProber]
+  + Utf8 [getPorts]
+  + Utf8 [h]
+  + Utf8 [hasNext]
+  + Utf8 [iterator]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [java/util/List]
+  + Utf8 [next]
+  + Utf8 [notifyDataSetChanged]
+  + Utf8 [onPostExecute]
+  + Utf8 [s]
+  + Utf8 [setText]
+  + Utf8 [size]
+  + Utf8 [sleep]
+  + Utf8 [toString]
+  + Utf8 [valueOf]
+
+Fields (count = 1):
+  + Field:        a Lcom/hoho/android/usbserial/examples/DeviceListActivity;
+    Access flags: 0x1010
+      = final synthetic com.hoho.android.usbserial.examples.DeviceListActivity a
+
+Methods (count = 5):
+  - Method:       <init>(Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V
+    Access flags: 0x0
+      = d(com.hoho.android.usbserial.examples.DeviceListActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #28
+        + Methodref [android/os/AsyncTask.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a([Ljava/lang/Void;)Ljava/util/List;
+    Access flags: 0x84
+      = protected varargs java.util.List a(java.lang.Void[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 153, locals = 7, stack = 7):
+      [0] aload_0 v0
+      [1] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [4] invokestatic #36
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+      [7] ldc #6
+        + String [Refreshing device list ...]
+      [9] invokestatic #30
+        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [12] pop
+      [13] ldc2_w #25
+        + Long [1000]
+      [16] invokestatic #29
+        + Methodref [android/os/SystemClock.sleep (J)V]
+      [19] invokestatic #34
+        + Methodref [com/hoho/android/usbserial/driver/UsbSerialProber.getDefaultProber ()Lcom/hoho/android/usbserial/driver/UsbSerialProber;]
+      [22] aload_0 v0
+      [23] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [26] invokestatic #37
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.e (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/hardware/usb/UsbManager;]
+      [29] invokevirtual #33
+        + Methodref [com/hoho/android/usbserial/driver/UsbSerialProber.findAllDrivers (Landroid/hardware/usb/UsbManager;)Ljava/util/List;]
+      [32] astore_2 v2
+      [33] new #22
+        + Class [java/util/ArrayList]
+      [36] dup
+      [37] invokespecial #49
+        + Methodref [java/util/ArrayList.<init> ()V]
+      [40] astore_3 v3
+      [41] aload_2 v2
+      [42] invokeinterface #55, 256
+        + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [47] astore v4
+      [49] aload v4
+      [51] invokeinterface #51, 256
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [56] ifeq +95 (target=151)
+      [59] aload v4
+      [61] invokeinterface #52, 256
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [66] checkcast #14
+        + Class [com/hoho/android/usbserial/driver/UsbSerialDriver]
+      [69] astore v5
+      [71] aload v5
+      [73] invokeinterface #50, 256
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialDriver.getPorts ()Ljava/util/List;]
+      [78] astore v6
+      [80] aload_0 v0
+      [81] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [84] invokestatic #36
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+      [87] ldc #4
+        + String [+ %s: %s port%s]
+      [89] iconst_3
+      [90] anewarray #19
+        + Class [java/lang/Object]
+      [93] dup
+      [94] iconst_0
+      [95] aload v5
+      [97] aastore
+      [98] dup
+      [99] iconst_1
+      [100] aload v6
+      [102] invokeinterface #56, 256
+        + InterfaceMethodref [java/util/List.size ()I]
+      [107] invokestatic #43
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [110] aastore
+      [111] dup
+      [112] iconst_2
+      [113] aload v6
+      [115] invokeinterface #56, 256
+        + InterfaceMethodref [java/util/List.size ()I]
+      [120] iconst_1
+      [121] ificmpne +8 (target=129)
+      [124] ldc #1
+        + String []
+      [126] goto +5 (target=131)
+      [129] ldc #7
+        + String [s]
+      [131] aastore
+      [132] invokestatic #44
+        + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+      [135] invokestatic #30
+        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [138] pop
+      [139] aload_3 v3
+      [140] aload v6
+      [142] invokeinterface #53, 512
+        + InterfaceMethodref [java/util/List.addAll (Ljava/util/Collection;)Z]
+      [147] pop
+      [148] goto -99 (target=49)
+      [151] aload_3 v3
+      [152] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/util/List;)V
+    Access flags: 0x4
+      = protected void a(java.util.List)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 127, locals = 2, stack = 6):
+      [0] aload_0 v0
+      [1] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [4] invokestatic #35
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+      [7] invokeinterface #54, 256
+        + InterfaceMethodref [java/util/List.clear ()V]
+      [12] aload_0 v0
+      [13] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [16] invokestatic #35
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+      [19] aload_1 v1
+      [20] invokeinterface #53, 512
+        + InterfaceMethodref [java/util/List.addAll (Ljava/util/Collection;)Z]
+      [25] pop
+      [26] aload_0 v0
+      [27] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [30] invokestatic #38
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.f (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/ArrayAdapter;]
+      [33] invokevirtual #31
+        + Methodref [android/widget/ArrayAdapter.notifyDataSetChanged ()V]
+      [36] aload_0 v0
+      [37] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [40] invokestatic #39
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.g (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Landroid/widget/TextView;]
+      [43] ldc #3
+        + String [%s device(s) found]
+      [45] iconst_1
+      [46] anewarray #19
+        + Class [java/lang/Object]
+      [49] dup
+      [50] iconst_0
+      [51] aload_0 v0
+      [52] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [55] invokestatic #35
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+      [58] invokeinterface #56, 256
+        + InterfaceMethodref [java/util/List.size ()I]
+      [63] invokestatic #43
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [66] aastore
+      [67] invokestatic #44
+        + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+      [70] invokevirtual #32
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [73] aload_0 v0
+      [74] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [77] invokestatic #40
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.h (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)V]
+      [80] aload_0 v0
+      [81] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [84] invokestatic #36
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.d (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/lang/String;]
+      [87] new #21
+        + Class [java/lang/StringBuilder]
+      [90] dup
+      [91] invokespecial #45
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [94] ldc #5
+        + String [Done refreshing, ]
+      [96] invokevirtual #47
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [99] aload_0 v0
+      [100] getfield #27
+        + Fieldref [com/hoho/android/usbserial/examples/d.a Lcom/hoho/android/usbserial/examples/DeviceListActivity;]
+      [103] invokestatic #35
+        + Methodref [com/hoho/android/usbserial/examples/DeviceListActivity.c (Lcom/hoho/android/usbserial/examples/DeviceListActivity;)Ljava/util/List;]
+      [106] invokeinterface #56, 256
+        + InterfaceMethodref [java/util/List.size ()I]
+      [111] invokevirtual #46
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [114] ldc #2
+        + String [ entries found.]
+      [116] invokevirtual #47
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [119] invokevirtual #48
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [122] invokestatic #30
+        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [125] pop
+      [126] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPostExecute(Ljava/lang/Object;)V
+    Access flags: 0x1004
+      = protected synthetic void onPostExecute(java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] checkcast #24
+        + Class [java/util/List]
+      [5] invokevirtual #41
+        + Methodref [com/hoho/android/usbserial/examples/d.a (Ljava/util/List;)V]
+      [8] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x1004
+      = protected synthetic java.lang.Object doInBackground(java.lang.Object[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] checkcast #8
+        + Class [[Ljava/lang/Void;]
+      [5] invokevirtual #42
+        + Methodref [com/hoho/android/usbserial/examples/d.a ([Ljava/lang/Void;)Ljava/util/List;]
+      [8] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/e
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x31
+    = public final class com.hoho.android.usbserial.examples.e extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 5):
+  + Class [com/hoho/android/usbserial/examples/e]
+  + Class [java/lang/Object]
+  + Utf8 [com/hoho/android/usbserial/examples/e]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/f
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x31
+    = public final class com.hoho.android.usbserial.examples.f extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 37):
+  + Integer [2131099648]
+  + Integer [2131099649]
+  + Integer [2131099650]
+  + Integer [2131099651]
+  + Integer [2131099652]
+  + Integer [2131099653]
+  + Integer [2131099654]
+  + Class [com/hoho/android/usbserial/examples/f]
+  + Class [java/lang/Object]
+  + Fieldref [com/hoho/android/usbserial/examples/f.consoleText I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.demoScroller I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.demoTitle I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.deviceList I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.progressBar I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.progressBarTitle I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.separator I]
+  + NameAndType [consoleText I]
+  + NameAndType [demoScroller I]
+  + NameAndType [demoTitle I]
+  + NameAndType [deviceList I]
+  + NameAndType [progressBar I]
+  + NameAndType [progressBarTitle I]
+  + NameAndType [separator I]
+  + Utf8 [()V]
+  + Utf8 [<clinit>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [com/hoho/android/usbserial/examples/f]
+  + Utf8 [consoleText]
+  + Utf8 [demoScroller]
+  + Utf8 [demoTitle]
+  + Utf8 [deviceList]
+  + Utf8 [java/lang/Object]
+  + Utf8 [progressBar]
+  + Utf8 [progressBarTitle]
+  + Utf8 [separator]
+
+Fields (count = 7):
+  + Field:        consoleText I
+    Access flags: 0x9
+      = public static int consoleText
+  + Field:        demoScroller I
+    Access flags: 0x9
+      = public static int demoScroller
+  + Field:        demoTitle I
+    Access flags: 0x9
+      = public static int demoTitle
+  + Field:        deviceList I
+    Access flags: 0x9
+      = public static int deviceList
+  + Field:        progressBar I
+    Access flags: 0x9
+      = public static int progressBar
+  + Field:        progressBarTitle I
+    Access flags: 0x9
+      = public static int progressBarTitle
+  + Field:        separator I
+    Access flags: 0x9
+      = public static int separator
+
+Methods (count = 1):
+  - Method:       <clinit>()V
+    Access flags: 0x8
+      = static void <clinit>()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 36, locals = 0, stack = 1):
+      [0] ldc #7
+        + Integer [2131099654]
+      [2] putstatic #10
+        + Fieldref [com/hoho/android/usbserial/examples/f.consoleText I]
+      [5] ldc #6
+        + Integer [2131099653]
+      [7] putstatic #11
+        + Fieldref [com/hoho/android/usbserial/examples/f.demoScroller I]
+      [10] ldc #1
+        + Integer [2131099648]
+      [12] putstatic #12
+        + Fieldref [com/hoho/android/usbserial/examples/f.demoTitle I]
+      [15] ldc #5
+        + Integer [2131099652]
+      [17] putstatic #13
+        + Fieldref [com/hoho/android/usbserial/examples/f.deviceList I]
+      [20] ldc #3
+        + Integer [2131099650]
+      [22] putstatic #14
+        + Fieldref [com/hoho/android/usbserial/examples/f.progressBar I]
+      [25] ldc #2
+        + Integer [2131099649]
+      [27] putstatic #15
+        + Fieldref [com/hoho/android/usbserial/examples/f.progressBarTitle I]
+      [30] ldc #4
+        + Integer [2131099651]
+      [32] putstatic #16
+        + Fieldref [com/hoho/android/usbserial/examples/f.separator I]
+      [35] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/g
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x31
+    = public final class com.hoho.android.usbserial.examples.g extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 17):
+  + Integer [2130903040]
+  + Integer [2130903041]
+  + Class [com/hoho/android/usbserial/examples/g]
+  + Class [java/lang/Object]
+  + Fieldref [com/hoho/android/usbserial/examples/g.main I]
+  + Fieldref [com/hoho/android/usbserial/examples/g.serial_console I]
+  + NameAndType [main I]
+  + NameAndType [serial_console I]
+  + Utf8 [()V]
+  + Utf8 [<clinit>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [com/hoho/android/usbserial/examples/g]
+  + Utf8 [java/lang/Object]
+  + Utf8 [main]
+  + Utf8 [serial_console]
+
+Fields (count = 2):
+  + Field:        main I
+    Access flags: 0x9
+      = public static int main
+  + Field:        serial_console I
+    Access flags: 0x9
+      = public static int serial_console
+
+Methods (count = 1):
+  - Method:       <clinit>()V
+    Access flags: 0x8
+      = static void <clinit>()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 11, locals = 0, stack = 1):
+      [0] ldc #1
+        + Integer [2130903040]
+      [2] putstatic #5
+        + Fieldref [com/hoho/android/usbserial/examples/g.main I]
+      [5] ldc #2
+        + Integer [2130903041]
+      [7] putstatic #6
+        + Fieldref [com/hoho/android/usbserial/examples/g.serial_console I]
+      [10] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/h
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x31
+    = public final class com.hoho.android.usbserial.examples.h extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 21):
+  + Integer [2131034112]
+  + Integer [2131034113]
+  + Integer [2131034114]
+  + Class [com/hoho/android/usbserial/examples/h]
+  + Class [java/lang/Object]
+  + Fieldref [com/hoho/android/usbserial/examples/h.app_name I]
+  + Fieldref [com/hoho/android/usbserial/examples/h.app_title I]
+  + Fieldref [com/hoho/android/usbserial/examples/h.refreshing I]
+  + NameAndType [app_name I]
+  + NameAndType [app_title I]
+  + NameAndType [refreshing I]
+  + Utf8 [()V]
+  + Utf8 [<clinit>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [app_name]
+  + Utf8 [app_title]
+  + Utf8 [com/hoho/android/usbserial/examples/h]
+  + Utf8 [java/lang/Object]
+  + Utf8 [refreshing]
+
+Fields (count = 3):
+  + Field:        app_name I
+    Access flags: 0x9
+      = public static int app_name
+  + Field:        app_title I
+    Access flags: 0x9
+      = public static int app_title
+  + Field:        refreshing I
+    Access flags: 0x9
+      = public static int refreshing
+
+Methods (count = 1):
+  - Method:       <clinit>()V
+    Access flags: 0x8
+      = static void <clinit>()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 0, stack = 1):
+      [0] ldc #1
+        + Integer [2131034112]
+      [2] putstatic #6
+        + Fieldref [com/hoho/android/usbserial/examples/h.app_name I]
+      [5] ldc #2
+        + Integer [2131034113]
+      [7] putstatic #7
+        + Fieldref [com/hoho/android/usbserial/examples/h.app_title I]
+      [10] ldc #3
+        + Integer [2131034114]
+      [12] putstatic #8
+        + Fieldref [com/hoho/android/usbserial/examples/h.refreshing I]
+      [15] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/SerialConsoleActivity
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x21
+    = public class com.hoho.android.usbserial.examples.SerialConsoleActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 259):
+  + Integer [115200]
+  + Integer [1610612736]
+  + String [
+
+]
+  + String [ bytes: 
+]
+  + String [Error opening device: ]
+  + String [Error setting up device: ]
+  + String [No serial device.]
+  + String [Opening device failed]
+  + String [Read ]
+  + String [Resumed, port=]
+  + String [Serial device: ]
+  + String [Starting io manager ..]
+  + String [Stopping io manager ..]
+  + String [usb]
+  + Class [android/app/Activity]
+  + Class [android/content/Context]
+  + Class [android/content/Intent]
+  + Class [android/hardware/usb/UsbManager]
+  + Class [android/util/Log]
+  + Class [android/widget/ScrollView]
+  + Class [android/widget/TextView]
+  + Class [com/hoho/android/usbserial/driver/UsbSerialDriver]
+  + Class [com/hoho/android/usbserial/driver/UsbSerialPort]
+  + Class [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+  + Class [com/hoho/android/usbserial/examples/f]
+  + Class [com/hoho/android/usbserial/examples/g]
+  + Class [com/hoho/android/usbserial/examples/i]
+  + Class [com/hoho/android/usbserial/util/HexDump]
+  + Class [com/hoho/android/usbserial/util/SerialInputOutputManager]
+  + Class [java/io/IOException]
+  + Class [java/lang/Class]
+  + Class [java/lang/Object]
+  + Class [java/lang/StringBuilder]
+  + Class [java/util/concurrent/ExecutorService]
+  + Class [java/util/concurrent/Executors]
+  + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a Ljava/lang/String;]
+  + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+  + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.c Landroid/widget/TextView;]
+  + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.d Landroid/widget/TextView;]
+  + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.e Landroid/widget/ScrollView;]
+  + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.f Ljava/util/concurrent/ExecutorService;]
+  + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.g Lcom/hoho/android/usbserial/util/SerialInputOutputManager;]
+  + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.h Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;]
+  + Fieldref [com/hoho/android/usbserial/examples/f.consoleText I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.demoScroller I]
+  + Fieldref [com/hoho/android/usbserial/examples/f.demoTitle I]
+  + Fieldref [com/hoho/android/usbserial/examples/g.serial_console I]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onPause ()V]
+  + Methodref [android/app/Activity.onResume ()V]
+  + Methodref [android/content/Context.startActivity (Landroid/content/Intent;)V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+  + Methodref [android/hardware/usb/UsbManager.openDevice (Landroid/hardware/usb/UsbDevice;)Landroid/hardware/usb/UsbDeviceConnection;]
+  + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+  + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/widget/ScrollView.smoothScrollTo (II)V]
+  + Methodref [android/widget/TextView.append (Ljava/lang/CharSequence;)V]
+  + Methodref [android/widget/TextView.getBottom ()I]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a ()V]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a ([B)V]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b ()V]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.c ()V]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.finish ()V]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.setContentView (I)V]
+  + Methodref [com/hoho/android/usbserial/examples/i.<init> (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)V]
+  + Methodref [com/hoho/android/usbserial/util/HexDump.dumpHexString ([B)Ljava/lang/String;]
+  + Methodref [com/hoho/android/usbserial/util/SerialInputOutputManager.<init> (Lcom/hoho/android/usbserial/driver/UsbSerialPort;Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;)V]
+  + Methodref [com/hoho/android/usbserial/util/SerialInputOutputManager.stop ()V]
+  + Methodref [java/io/IOException.getMessage ()Ljava/lang/String;]
+  + Methodref [java/lang/Class.getSimpleName ()Ljava/lang/String;]
+  + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + Methodref [java/util/concurrent/Executors.newSingleThreadExecutor ()Ljava/util/concurrent/ExecutorService;]
+  + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialDriver.getDevice ()Landroid/hardware/usb/UsbDevice;]
+  + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.close ()V]
+  + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.getDriver ()Lcom/hoho/android/usbserial/driver/UsbSerialDriver;]
+  + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.open (Landroid/hardware/usb/UsbDeviceConnection;)V]
+  + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.setParameters (IIII)V]
+  + InterfaceMethodref [java/util/concurrent/ExecutorService.submit (Ljava/lang/Runnable;)Ljava/util/concurrent/Future;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Lcom/hoho/android/usbserial/driver/UsbSerialPort;Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;)V]
+  + NameAndType [<init> (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)V]
+  + NameAndType [a ()V]
+  + NameAndType [a ([B)V]
+  + NameAndType [a Ljava/lang/String;]
+  + NameAndType [addFlags (I)Landroid/content/Intent;]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/CharSequence;)V]
+  + NameAndType [append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()V]
+  + NameAndType [b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+  + NameAndType [c ()V]
+  + NameAndType [c Landroid/widget/TextView;]
+  + NameAndType [close ()V]
+  + NameAndType [consoleText I]
+  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [d Landroid/widget/TextView;]
+  + NameAndType [demoScroller I]
+  + NameAndType [demoTitle I]
+  + NameAndType [dumpHexString ([B)Ljava/lang/String;]
+  + NameAndType [e (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+  + NameAndType [e Landroid/widget/ScrollView;]
+  + NameAndType [f Ljava/util/concurrent/ExecutorService;]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [finish ()V]
+  + NameAndType [g Lcom/hoho/android/usbserial/util/SerialInputOutputManager;]
+  + NameAndType [getBottom ()I]
+  + NameAndType [getClass ()Ljava/lang/Class;]
+  + NameAndType [getDevice ()Landroid/hardware/usb/UsbDevice;]
+  + NameAndType [getDriver ()Lcom/hoho/android/usbserial/driver/UsbSerialDriver;]
+  + NameAndType [getMessage ()Ljava/lang/String;]
+  + NameAndType [getSimpleName ()Ljava/lang/String;]
+  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [h Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [newSingleThreadExecutor ()Ljava/util/concurrent/ExecutorService;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onPause ()V]
+  + NameAndType [onResume ()V]
+  + NameAndType [open (Landroid/hardware/usb/UsbDeviceConnection;)V]
+  + NameAndType [openDevice (Landroid/hardware/usb/UsbDevice;)Landroid/hardware/usb/UsbDeviceConnection;]
+  + NameAndType [serial_console I]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setParameters (IIII)V]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [smoothScrollTo (II)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [stop ()V]
+  + NameAndType [submit (Ljava/lang/Runnable;)Ljava/util/concurrent/Future;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [
+
+]
+  + Utf8 [ bytes: 
+]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/hardware/usb/UsbDevice;]
+  + Utf8 [()Lcom/hoho/android/usbserial/driver/UsbSerialDriver;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/concurrent/ExecutorService;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(I)V]
+  + Utf8 [(II)V]
+  + Utf8 [(IIII)V]
+  + Utf8 [(Landroid/content/Context;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/hardware/usb/UsbDevice;)Landroid/hardware/usb/UsbDeviceConnection;]
+  + Utf8 [(Landroid/hardware/usb/UsbDeviceConnection;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/driver/UsbSerialPort;Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)Ljava/lang/String;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;[B)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+  + Utf8 [([B)Ljava/lang/String;]
+  + Utf8 [([B)V]
+  + Utf8 [<clinit>]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Error opening device: ]
+  + Utf8 [Error setting up device: ]
+  + Utf8 [I]
+  + Utf8 [Landroid/widget/ScrollView;]
+  + Utf8 [Landroid/widget/TextView;]
+  + Utf8 [Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+  + Utf8 [Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;]
+  + Utf8 [Lcom/hoho/android/usbserial/util/SerialInputOutputManager;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [Ljava/util/concurrent/ExecutorService;]
+  + Utf8 [No serial device.]
+  + Utf8 [Opening device failed]
+  + Utf8 [Read ]
+  + Utf8 [Resumed, port=]
+  + Utf8 [Serial device: ]
+  + Utf8 [Starting io manager ..]
+  + Utf8 [Stopping io manager ..]
+  + Utf8 [a]
+  + Utf8 [addFlags]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/hardware/usb/UsbManager]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/widget/ScrollView]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [close]
+  + Utf8 [com/hoho/android/usbserial/driver/UsbSerialDriver]
+  + Utf8 [com/hoho/android/usbserial/driver/UsbSerialPort]
+  + Utf8 [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/f]
+  + Utf8 [com/hoho/android/usbserial/examples/g]
+  + Utf8 [com/hoho/android/usbserial/examples/i]
+  + Utf8 [com/hoho/android/usbserial/util/HexDump]
+  + Utf8 [com/hoho/android/usbserial/util/SerialInputOutputManager]
+  + Utf8 [consoleText]
+  + Utf8 [d]
+  + Utf8 [demoScroller]
+  + Utf8 [demoTitle]
+  + Utf8 [dumpHexString]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [findViewById]
+  + Utf8 [finish]
+  + Utf8 [g]
+  + Utf8 [getBottom]
+  + Utf8 [getClass]
+  + Utf8 [getDevice]
+  + Utf8 [getDriver]
+  + Utf8 [getMessage]
+  + Utf8 [getSimpleName]
+  + Utf8 [getSystemService]
+  + Utf8 [h]
+  + Utf8 [i]
+  + Utf8 [java/io/IOException]
+  + Utf8 [java/lang/Class]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/util/concurrent/ExecutorService]
+  + Utf8 [java/util/concurrent/Executors]
+  + Utf8 [newSingleThreadExecutor]
+  + Utf8 [onCreate]
+  + Utf8 [onPause]
+  + Utf8 [onResume]
+  + Utf8 [open]
+  + Utf8 [openDevice]
+  + Utf8 [serial_console]
+  + Utf8 [setContentView]
+  + Utf8 [setParameters]
+  + Utf8 [setText]
+  + Utf8 [smoothScrollTo]
+  + Utf8 [startActivity]
+  + Utf8 [stop]
+  + Utf8 [submit]
+  + Utf8 [toString]
+  + Utf8 [usb]
+
+Fields (count = 8):
+  + Field:        a Ljava/lang/String;
+    Access flags: 0x12
+      = private final java.lang.String a
+  + Field:        b Lcom/hoho/android/usbserial/driver/UsbSerialPort;
+    Access flags: 0xa
+      = private static com.hoho.android.usbserial.driver.UsbSerialPort b
+  + Field:        c Landroid/widget/TextView;
+    Access flags: 0x2
+      = private android.widget.TextView c
+  + Field:        d Landroid/widget/TextView;
+    Access flags: 0x2
+      = private android.widget.TextView d
+  + Field:        e Landroid/widget/ScrollView;
+    Access flags: 0x2
+      = private android.widget.ScrollView e
+  + Field:        f Ljava/util/concurrent/ExecutorService;
+    Access flags: 0x12
+      = private final java.util.concurrent.ExecutorService f
+  + Field:        g Lcom/hoho/android/usbserial/util/SerialInputOutputManager;
+    Access flags: 0x2
+      = private com.hoho.android.usbserial.util.SerialInputOutputManager g
+  + Field:        h Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;
+    Access flags: 0x12
+      = private final com.hoho.android.usbserial.util.SerialInputOutputManager$Listener h
+
+Methods (count = 12):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public SerialConsoleActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 33, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #48
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] ldc #24
+        + Class [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+      [7] invokevirtual #76
+        + Methodref [java/lang/Class.getSimpleName ()Ljava/lang/String;]
+      [10] putfield #36
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a Ljava/lang/String;]
+      [13] aload_0 v0
+      [14] invokestatic #83
+        + Methodref [java/util/concurrent/Executors.newSingleThreadExecutor ()Ljava/util/concurrent/ExecutorService;]
+      [17] putfield #41
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.f Ljava/util/concurrent/ExecutorService;]
+      [20] aload_0 v0
+      [21] new #27
+        + Class [com/hoho/android/usbserial/examples/i]
+      [24] dup
+      [25] aload_0 v0
+      [26] invokespecial #71
+        + Methodref [com/hoho/android/usbserial/examples/i.<init> (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)V]
+      [29] putfield #43
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.h Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;]
+      [32] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 55, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #49
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] getstatic #47
+        + Fieldref [com/hoho/android/usbserial/examples/g.serial_console I]
+      [9] invokevirtual #70
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.setContentView (I)V]
+      [12] aload_0 v0
+      [13] aload_0 v0
+      [14] getstatic #46
+        + Fieldref [com/hoho/android/usbserial/examples/f.demoTitle I]
+      [17] invokevirtual #67
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.findViewById (I)Landroid/view/View;]
+      [20] checkcast #21
+        + Class [android/widget/TextView]
+      [23] putfield #38
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.c Landroid/widget/TextView;]
+      [26] aload_0 v0
+      [27] aload_0 v0
+      [28] getstatic #44
+        + Fieldref [com/hoho/android/usbserial/examples/f.consoleText I]
+      [31] invokevirtual #67
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.findViewById (I)Landroid/view/View;]
+      [34] checkcast #21
+        + Class [android/widget/TextView]
+      [37] putfield #39
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.d Landroid/widget/TextView;]
+      [40] aload_0 v0
+      [41] aload_0 v0
+      [42] getstatic #45
+        + Fieldref [com/hoho/android/usbserial/examples/f.demoScroller I]
+      [45] invokevirtual #67
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.findViewById (I)Landroid/view/View;]
+      [48] checkcast #20
+        + Class [android/widget/ScrollView]
+      [51] putfield #40
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.e Landroid/widget/ScrollView;]
+      [54] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPause()V
+    Access flags: 0x4
+      = protected void onPause()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 35, locals = 2, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #50
+        + Methodref [android/app/Activity.onPause ()V]
+      [4] aload_0 v0
+      [5] invokespecial #63
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a ()V]
+      [8] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [11] ifnull +19 (target=30)
+      [14] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [17] invokeinterface #85, 256
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.close ()V]
+      [22] goto +4 (target=26)
+      [25] astore_1 v1
+      [26] aconst_null
+      [27] putstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [30] aload_0 v0
+      [31] invokevirtual #68
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.finish ()V]
+      [34] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (14 -> 22: 25):
+      + Class [java/io/IOException]
+      Code attribute attributes (attribute count = 0):
+  + Method:       onResume()V
+    Access flags: 0x4
+      = protected void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 237, locals = 5, stack = 5):
+      [0] aload_0 v0
+      [1] invokespecial #51
+        + Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] getfield #36
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a Ljava/lang/String;]
+      [8] new #33
+        + Class [java/lang/StringBuilder]
+      [11] dup
+      [12] invokespecial #78
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [15] ldc #10
+        + String [Resumed, port=]
+      [17] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [20] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [23] invokevirtual #80
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+      [26] invokevirtual #82
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [29] invokestatic #56
+        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [32] pop
+      [33] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [36] ifnonnull +15 (target=51)
+      [39] aload_0 v0
+      [40] getfield #38
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.c Landroid/widget/TextView;]
+      [43] ldc #7
+        + String [No serial device.]
+      [45] invokevirtual #62
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [48] goto +184 (target=232)
+      [51] aload_0 v0
+      [52] ldc #14
+        + String [usb]
+      [54] invokevirtual #69
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [57] checkcast #18
+        + Class [android/hardware/usb/UsbManager]
+      [60] astore_1 v1
+      [61] aload_1 v1
+      [62] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [65] invokeinterface #86, 256
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.getDriver ()Lcom/hoho/android/usbserial/driver/UsbSerialDriver;]
+      [70] invokeinterface #84, 256
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialDriver.getDevice ()Landroid/hardware/usb/UsbDevice;]
+      [75] invokevirtual #55
+        + Methodref [android/hardware/usb/UsbManager.openDevice (Landroid/hardware/usb/UsbDevice;)Landroid/hardware/usb/UsbDeviceConnection;]
+      [78] astore_2 v2
+      [79] aload_2 v2
+      [80] ifnonnull +13 (target=93)
+      [83] aload_0 v0
+      [84] getfield #38
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.c Landroid/widget/TextView;]
+      [87] ldc #8
+        + String [Opening device failed]
+      [89] invokevirtual #62
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [92] return
+      [93] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [96] aload_2 v2
+      [97] invokeinterface #87, 512
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.open (Landroid/hardware/usb/UsbDeviceConnection;)V]
+      [102] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [105] ldc #1
+        + Integer [115200]
+      [107] bipush 8
+      [109] iconst_1
+      [110] iconst_0
+      [111] invokeinterface #88, 1280
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.setParameters (IIII)V]
+      [116] goto +82 (target=198)
+      [119] astore_3 v3
+      [120] aload_0 v0
+      [121] getfield #36
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a Ljava/lang/String;]
+      [124] new #33
+        + Class [java/lang/StringBuilder]
+      [127] dup
+      [128] invokespecial #78
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [131] ldc #6
+        + String [Error setting up device: ]
+      [133] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [136] aload_3 v3
+      [137] invokevirtual #75
+        + Methodref [java/io/IOException.getMessage ()Ljava/lang/String;]
+      [140] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [143] invokevirtual #82
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [146] aload_3 v3
+      [147] invokestatic #57
+        + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+      [150] pop
+      [151] aload_0 v0
+      [152] getfield #38
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.c Landroid/widget/TextView;]
+      [155] new #33
+        + Class [java/lang/StringBuilder]
+      [158] dup
+      [159] invokespecial #78
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [162] ldc #5
+        + String [Error opening device: ]
+      [164] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [167] aload_3 v3
+      [168] invokevirtual #75
+        + Methodref [java/io/IOException.getMessage ()Ljava/lang/String;]
+      [171] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [174] invokevirtual #82
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [177] invokevirtual #62
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [180] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [183] invokeinterface #85, 256
+        + InterfaceMethodref [com/hoho/android/usbserial/driver/UsbSerialPort.close ()V]
+      [188] goto +5 (target=193)
+      [191] astore v4
+      [193] aconst_null
+      [194] putstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [197] return
+      [198] aload_0 v0
+      [199] getfield #38
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.c Landroid/widget/TextView;]
+      [202] new #33
+        + Class [java/lang/StringBuilder]
+      [205] dup
+      [206] invokespecial #78
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [209] ldc #11
+        + String [Serial device: ]
+      [211] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [214] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [217] invokevirtual #77
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [220] invokevirtual #76
+        + Methodref [java/lang/Class.getSimpleName ()Ljava/lang/String;]
+      [223] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [226] invokevirtual #82
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [229] invokevirtual #62
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [232] aload_0 v0
+      [233] invokespecial #66
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.c ()V]
+      [236] return
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (93 -> 116: 119):
+      + Class [java/io/IOException]
+      - ExceptionInfo (180 -> 188: 191):
+      + Class [java/io/IOException]
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x2
+      = private void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 30, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #42
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.g Lcom/hoho/android/usbserial/util/SerialInputOutputManager;]
+      [4] ifnull +25 (target=29)
+      [7] aload_0 v0
+      [8] getfield #36
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a Ljava/lang/String;]
+      [11] ldc #13
+        + String [Stopping io manager ..]
+      [13] invokestatic #58
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [16] pop
+      [17] aload_0 v0
+      [18] getfield #42
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.g Lcom/hoho/android/usbserial/util/SerialInputOutputManager;]
+      [21] invokevirtual #74
+        + Methodref [com/hoho/android/usbserial/util/SerialInputOutputManager.stop ()V]
+      [24] aload_0 v0
+      [25] aconst_null
+      [26] putfield #42
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.g Lcom/hoho/android/usbserial/util/SerialInputOutputManager;]
+      [29] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()V
+    Access flags: 0x2
+      = private void b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 49, locals = 1, stack = 5):
+      [0] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [3] ifnull +45 (target=48)
+      [6] aload_0 v0
+      [7] getfield #36
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a Ljava/lang/String;]
+      [10] ldc #12
+        + String [Starting io manager ..]
+      [12] invokestatic #58
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [15] pop
+      [16] aload_0 v0
+      [17] new #29
+        + Class [com/hoho/android/usbserial/util/SerialInputOutputManager]
+      [20] dup
+      [21] getstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [24] aload_0 v0
+      [25] getfield #43
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.h Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;]
+      [28] invokespecial #73
+        + Methodref [com/hoho/android/usbserial/util/SerialInputOutputManager.<init> (Lcom/hoho/android/usbserial/driver/UsbSerialPort;Lcom/hoho/android/usbserial/util/SerialInputOutputManager$Listener;)V]
+      [31] putfield #42
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.g Lcom/hoho/android/usbserial/util/SerialInputOutputManager;]
+      [34] aload_0 v0
+      [35] getfield #41
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.f Ljava/util/concurrent/ExecutorService;]
+      [38] aload_0 v0
+      [39] getfield #42
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.g Lcom/hoho/android/usbserial/util/SerialInputOutputManager;]
+      [42] invokeinterface #89, 512
+        + InterfaceMethodref [java/util/concurrent/ExecutorService.submit (Ljava/lang/Runnable;)Ljava/util/concurrent/Future;]
+      [47] pop
+      [48] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()V
+    Access flags: 0x2
+      = private void c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #63
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a ()V]
+      [4] aload_0 v0
+      [5] invokespecial #65
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b ()V]
+      [8] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a([B)V
+    Access flags: 0x2
+      = private void a(byte[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 62, locals = 3, stack = 3):
+      [0] new #33
+        + Class [java/lang/StringBuilder]
+      [3] dup
+      [4] invokespecial #78
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [7] ldc #9
+        + String [Read ]
+      [9] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [12] aload_1 v1
+      [13] arraylength
+      [14] invokevirtual #79
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [17] ldc #4
+        + String [ bytes: 
+]
+      [19] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [22] aload_1 v1
+      [23] invokestatic #72
+        + Methodref [com/hoho/android/usbserial/util/HexDump.dumpHexString ([B)Ljava/lang/String;]
+      [26] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [29] ldc #3
+        + String [
+
+]
+      [31] invokevirtual #81
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [34] invokevirtual #82
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [37] astore_2 v2
+      [38] aload_0 v0
+      [39] getfield #39
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.d Landroid/widget/TextView;]
+      [42] aload_2 v2
+      [43] invokevirtual #60
+        + Methodref [android/widget/TextView.append (Ljava/lang/CharSequence;)V]
+      [46] aload_0 v0
+      [47] getfield #40
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.e Landroid/widget/ScrollView;]
+      [50] iconst_0
+      [51] aload_0 v0
+      [52] getfield #39
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.d Landroid/widget/TextView;]
+      [55] invokevirtual #61
+        + Methodref [android/widget/TextView.getBottom ()I]
+      [58] invokevirtual #59
+        + Methodref [android/widget/ScrollView.smoothScrollTo (II)V]
+      [61] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/content/Context;Lcom/hoho/android/usbserial/driver/UsbSerialPort;)V
+    Access flags: 0x8
+      = static void a(android.content.Context,com.hoho.android.usbserial.driver.UsbSerialPort)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 28, locals = 3, stack = 4):
+      [0] aload_1 v1
+      [1] putstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [4] new #17
+        + Class [android/content/Intent]
+      [7] dup
+      [8] aload_0 v0
+      [9] ldc #24
+        + Class [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+      [11] invokespecial #53
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [14] astore_2 v2
+      [15] aload_2 v2
+      [16] ldc #2
+        + Integer [1610612736]
+      [18] invokevirtual #54
+        + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+      [21] pop
+      [22] aload_0 v0
+      [23] aload_2 v2
+      [24] invokevirtual #52
+        + Methodref [android/content/Context.startActivity (Landroid/content/Intent;)V]
+      [27] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)Ljava/lang/String;
+    Access flags: 0x1008
+      = static synthetic java.lang.String a(com.hoho.android.usbserial.examples.SerialConsoleActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #36
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a Ljava/lang/String;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;[B)V
+    Access flags: 0x1008
+      = static synthetic void a(com.hoho.android.usbserial.examples.SerialConsoleActivity,byte[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #64
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a ([B)V]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       <clinit>()V
+    Access flags: 0x8
+      = static void <clinit>()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 0, stack = 1):
+      [0] aconst_null
+      [1] putstatic #37
+        + Fieldref [com/hoho/android/usbserial/examples/SerialConsoleActivity.b Lcom/hoho/android/usbserial/driver/UsbSerialPort;]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/i
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x20
+    = class com.hoho.android.usbserial.examples.i extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [com/hoho/android/usbserial/util/SerialInputOutputManager$Listener]
+
+Constant Pool (count = 43):
+  + String [Runner stopped.]
+  + Class [android/util/Log]
+  + Class [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+  + Class [com/hoho/android/usbserial/examples/i]
+  + Class [com/hoho/android/usbserial/examples/j]
+  + Class [com/hoho/android/usbserial/util/SerialInputOutputManager$Listener]
+  + Class [java/lang/Object]
+  + Fieldref [com/hoho/android/usbserial/examples/i.a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+  + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)Ljava/lang/String;]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.runOnUiThread (Ljava/lang/Runnable;)V]
+  + Methodref [com/hoho/android/usbserial/examples/j.<init> (Lcom/hoho/android/usbserial/examples/i;[B)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lcom/hoho/android/usbserial/examples/i;[B)V]
+  + NameAndType [a (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)Ljava/lang/String;]
+  + NameAndType [a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [runOnUiThread (Ljava/lang/Runnable;)V]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)Ljava/lang/String;]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/i;[B)V]
+  + Utf8 [(Ljava/lang/Exception;)V]
+  + Utf8 [(Ljava/lang/Runnable;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [([B)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+  + Utf8 [Runner stopped.]
+  + Utf8 [a]
+  + Utf8 [android/util/Log]
+  + Utf8 [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/i]
+  + Utf8 [com/hoho/android/usbserial/examples/j]
+  + Utf8 [com/hoho/android/usbserial/util/SerialInputOutputManager$Listener]
+  + Utf8 [d]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onNewData]
+  + Utf8 [onRunError]
+  + Utf8 [runOnUiThread]
+
+Fields (count = 1):
+  + Field:        a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;
+    Access flags: 0x1010
+      = final synthetic com.hoho.android.usbserial.examples.SerialConsoleActivity a
+
+Methods (count = 3):
+  - Method:       <init>(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)V
+    Access flags: 0x0
+      = i(com.hoho.android.usbserial.examples.SerialConsoleActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #8
+        + Fieldref [com/hoho/android/usbserial/examples/i.a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #13
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onRunError(Ljava/lang/Exception;)V
+    Access flags: 0x1
+      = public void onRunError(java.lang.Exception)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 14, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [com/hoho/android/usbserial/examples/i.a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+      [4] invokestatic #10
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;)Ljava/lang/String;]
+      [7] ldc #1
+        + String [Runner stopped.]
+      [9] invokestatic #9
+        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [12] pop
+      [13] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onNewData([B)V
+    Access flags: 0x1
+      = public void onNewData(byte[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [com/hoho/android/usbserial/examples/i.a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+      [4] new #5
+        + Class [com/hoho/android/usbserial/examples/j]
+      [7] dup
+      [8] aload_0 v0
+      [9] aload_1 v1
+      [10] invokespecial #12
+        + Methodref [com/hoho/android/usbserial/examples/j.<init> (Lcom/hoho/android/usbserial/examples/i;[B)V]
+      [13] invokevirtual #11
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.runOnUiThread (Ljava/lang/Runnable;)V]
+      [16] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/hoho/android/usbserial/examples/j
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+    = target 1.7
+  Access flags:  0x20
+    = class com.hoho.android.usbserial.examples.j extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [java/lang/Runnable]
+
+Constant Pool (count = 32):
+  + Class [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+  + Class [com/hoho/android/usbserial/examples/i]
+  + Class [com/hoho/android/usbserial/examples/j]
+  + Class [java/lang/Object]
+  + Class [java/lang/Runnable]
+  + Fieldref [com/hoho/android/usbserial/examples/i.a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+  + Fieldref [com/hoho/android/usbserial/examples/j.a [B]
+  + Fieldref [com/hoho/android/usbserial/examples/j.b Lcom/hoho/android/usbserial/examples/i;]
+  + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;[B)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;[B)V]
+  + NameAndType [a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+  + NameAndType [a [B]
+  + NameAndType [b Lcom/hoho/android/usbserial/examples/i;]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;[B)V]
+  + Utf8 [(Lcom/hoho/android/usbserial/examples/i;[B)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+  + Utf8 [Lcom/hoho/android/usbserial/examples/i;]
+  + Utf8 [[B]
+  + Utf8 [a]
+  + Utf8 [b]
+  + Utf8 [com/hoho/android/usbserial/examples/SerialConsoleActivity]
+  + Utf8 [com/hoho/android/usbserial/examples/i]
+  + Utf8 [com/hoho/android/usbserial/examples/j]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/Runnable]
+  + Utf8 [run]
+
+Fields (count = 2):
+  + Field:        a [B
+    Access flags: 0x1010
+      = final synthetic byte[] a
+  + Field:        b Lcom/hoho/android/usbserial/examples/i;
+    Access flags: 0x1010
+      = final synthetic com.hoho.android.usbserial.examples.i b
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/hoho/android/usbserial/examples/i;[B)V
+    Access flags: 0x0
+      = j(com.hoho.android.usbserial.examples.i,byte[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #8
+        + Fieldref [com/hoho/android/usbserial/examples/j.b Lcom/hoho/android/usbserial/examples/i;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] putfield #7
+        + Fieldref [com/hoho/android/usbserial/examples/j.a [B]
+      [10] aload_0 v0
+      [11] invokespecial #10
+        + Methodref [java/lang/Object.<init> ()V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       run()V
+    Access flags: 0x1
+      = public void run()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [com/hoho/android/usbserial/examples/j.b Lcom/hoho/android/usbserial/examples/i;]
+      [4] getfield #6
+        + Fieldref [com/hoho/android/usbserial/examples/i.a Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;]
+      [7] aload_0 v0
+      [8] getfield #7
+        + Fieldref [com/hoho/android/usbserial/examples/j.a [B]
+      [11] invokestatic #9
+        + Methodref [com/hoho/android/usbserial/examples/SerialConsoleActivity.a (Lcom/hoho/android/usbserial/examples/SerialConsoleActivity;[B)V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
