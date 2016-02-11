@@ -58,7 +58,7 @@ public class Register extends Activity implements View.OnClickListener {
         etPassword= (EditText) findViewById(R.id.etPassword);
         etPhysicalTherapist=(EditText) findViewById(R.id.etPhysicalTherapist);
         bRegister= (Button) findViewById(R.id.bRegister);
-
+        etAdmin= (CheckBox) findViewById(R.id.etAdmin);
         bRegister.setOnClickListener(this);
 
    /*     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

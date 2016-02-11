@@ -36,7 +36,7 @@ import cz.msebera.android.httpclient.util.EntityUtils;
 public class ServerRequests {
     ProgressDialog progressDialog;
     public static final int CONNECTION_TIMEOUT = 1000 * 15;
-    public static final String SERVER_ADDRESS = "http://smartwalker.netai.net";
+    public static final String SERVER_ADDRESS = "http://smartwalker.netai.net/";
 
     public ServerRequests(Context context) {
 
@@ -128,7 +128,7 @@ public class ServerRequests {
             cz.msebera.android.httpclient.params.HttpConnectionParams.setSoTimeout(httpRequestParams, CONNECTION_TIMEOUT);
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
-            HttpPost post = new HttpPost(SERVER_ADDRESS + "fetchUserData.php");
+            HttpPost post = new HttpPost(SERVER_ADDRESS + "FetchUserData.php");
 
             User returnedUser = null;
             try {
@@ -143,8 +143,16 @@ public class ServerRequests {
                     returnedUser = null;
                 } else {
                     String name = jObject.getString("name");
-                    String ptName = jObject.getString("ptName");
-                    boolean admin = jObject.getBoolean("admin");
+                    String ptName = jObject.getString("ptname");
+                    boolean admin;
+                    if(jObject.getInt("admin")==0){
+                        admin=true;
+                    }
+                    else
+                    {
+                        admin=false;
+                    }
+
 
                     //store user data here
                     returnedUser = new User(name, user.username, user.password, ptName, admin);
@@ -155,7 +163,7 @@ public class ServerRequests {
                 e.printStackTrace();
             }
 
-            return null;
+            return returnedUser;
         }
 
         @Override

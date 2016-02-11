@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register">Register</string>
+    <string name="title_activity_graphical_view">GraphicalView</string>
+    <string name="title_activity_read_arduino">ReadArduino</string>
 </resources>

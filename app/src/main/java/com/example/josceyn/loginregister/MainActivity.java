@@ -76,6 +76,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       // setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_main);
 
         etName= (EditText) findViewById(R.id.etName);
